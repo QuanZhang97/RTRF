@@ -4,21 +4,12 @@
 % Dec. 30, 2021, Quan Zhang, radon transform preprocessing
 
 clear; clc; close all;
-addpath /Users/quanzhang/Data/RF migration/RF_migration/OneWay_RF
-addpath /Users/quanzhang/Data/RF migration/RF_migration/codes
-addpath /Users/quanzhang/Data/test_rf_hk/radon_decon_codes
-addpath /Users/quanzhang/Data/test_rf_hk/radon_synthetics
 SeismicLab_startup;
 processRFmatlab_startup;
 addpath ~/Code/jsonlab-1.5;
-%% define the grid
-rootdir='/Users/quanzhang/Data/RF migration/RF_migration/OneWay_RF/par_step_moho/';
-% rootdir='/home/yunfeng/seismology/SOFI2D-master/par_step_moho/';
 
-datadir=fullfile(rootdir,'su');
-figdir='/Users/quanzhang/Data/RF migration/RF_migration/figures_synthetics';
-modeldir=fullfile(rootdir,'model');
-load(fullfile(modeldir,'model.mat'));
+%% define the grid
+load('model.mat');
 % interpolate the model
 dx=1;
 dy=dx/2;
@@ -373,6 +364,7 @@ sekv_noise = sekv+random_noise_2;
     imagesc(rx,ittax,itr_de)
     xlim([120 280])
     ylim([-5 20])
+    
     title('Receiver function (noisy)');xlabel('Distance (km)');ylabel('Time (sec)')
     colorbar
     caxis([-0.2 0.2])
