@@ -1,4 +1,4 @@
-# Synthetic test for Radon based receiver function preprocessing 
+# Synthetic and real data test for Radon transform based receiver function preprocessing 
 ![logo](https://user-images.githubusercontent.com/97296586/148636639-2e19b033-0dc5-41ca-bd5d-b8a727240a3f.png)
 
 Quan Zhang Dec/30/2021
