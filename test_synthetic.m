@@ -7,7 +7,7 @@ clear; clc; close all;
 addpath ./data
 addpath ./codes
 %% define the grid
-load('./model.mat');
+load('./data/model.mat');
 datadir='./';
 % interpolate the model
 dx=1;
