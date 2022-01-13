@@ -25,7 +25,7 @@
 
 clear; clc; close all;
 addpath ./data
-addpath ./codes
+addpath(genpath('./codes'))
 %% define the grid
 load('./data/model.mat');
 datadir='./';
