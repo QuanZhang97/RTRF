@@ -25,7 +25,7 @@
 
 clear; clc; close all;
 addpath ./data
-addpath ./codes
+addpath(genpath('./codes'))
 
 gauss=2.5;
 load('newcolormap.mat')
