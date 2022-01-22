@@ -5,7 +5,7 @@
 
 Quan Zhang Dec/30/2021
 
-This code is a reproducible code for the figures in Zhang, 2022 (in prep.).
+This package contains all reproducible codes generating the figures in Zhang, 2022 (in prep.).
 
 This code relys on the open-source package of jsonlab (https://github.com/fangq/jsonlab.git), SeismicLab (http://seismic-lab.physics.ualberta.ca/), and processRFmatlab (https://github.com/iwbailey/processRFmatlab.git). You can visit their website to get more information. Before you start running this code, you could install all of them and modify the path to where you have just installed or just utilize the useful codes extracted from the packages.
 
