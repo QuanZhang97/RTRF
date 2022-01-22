@@ -67,17 +67,16 @@ for ievt=1%6:16
     t=sub(1).ittax;
     figure;
     set(gcf,'Position',[100 100 1400 400],'Color','w');
-    subplot(131)
-    m_proj('lambert','long',[82 88],'lat',[28 35]); hold on;
-    m_scatter(slon,slat,30,'^'); hold on;
-    m_plot(lonp,latp,'k')
-    m_scatter(slonp,slatp,30,'r^'); hold on;
-    m_gshhs('l','line','color','k','linewidth',1)
-    m_gshhs('lb2','line','color','k')
-    m_grid('linewidth',2,'tickdir','out',...
-        'xaxisloc','bottom','yaxisloc','right','fontsize',14);
-    text(-0.1,0.98,'(a)','Units','normalized','FontSize',18)
-    subplot(1,3,[2:3])
+%     subplot(131)
+%     m_proj('lambert','long',[82 88],'lat',[28 35]); hold on;
+%     m_scatter(slon,slat,30,'^'); hold on;
+%     m_plot(lonp,latp,'k')
+%     m_scatter(slonp,slatp,30,'r^'); hold on;
+%     m_gshhs('l','line','color','k','linewidth',1)
+%     m_gshhs('lb2','line','color','k')
+%     m_grid('linewidth',2,'tickdir','out','xaxisloc','bottom','yaxisloc','right','fontsize',14);
+%     text(-0.1,0.98,'(a)','Units','normalized','FontSize',18)
+    subplot(1,3,[1:3])
 %     wigb([sub.itr],3,dist0,t);
     imagesc(dist0,t,[sub.itr]);
     colormap(seismic(3));
@@ -264,18 +263,18 @@ for ievt=1%6:16
     t=sub(1).ittax;
     figure;
     set(gcf,'Position',[100 100 1400 400],'Color','w');
-    subplot(131)
-    m_proj('lambert','long',[82 88],'lat',[28 35]); hold on;
-    m_scatter(slon,slat,30,'^'); hold on;
-    m_plot(lonp,latp,'k')
-    m_scatter(slonp,slatp,30,'r^'); hold on;
-    m_gshhs('l','line','color','k','linewidth',1)
-    m_gshhs('lb2','line','color','k')
-    m_grid('linewidth',2,'tickdir','out',...
-        'xaxisloc','bottom','yaxisloc','right','fontsize',14);
-    text(-0.1,0.98,'(a)','Units','normalized','FontSize',18)
+%     subplot(131)
+%     m_proj('lambert','long',[82 88],'lat',[28 35]); hold on;
+%     m_scatter(slon,slat,30,'^'); hold on;
+%     m_plot(lonp,latp,'k')
+%     m_scatter(slonp,slatp,30,'r^'); hold on;
+%     m_gshhs('l','line','color','k','linewidth',1)
+%     m_gshhs('lb2','line','color','k')
+%     m_grid('linewidth',2,'tickdir','out',...
+%         'xaxisloc','bottom','yaxisloc','right','fontsize',14);
+%     text(-0.1,0.98,'(a)','Units','normalized','FontSize',18)
 
-    subplot(1,3,[2:3])
+    subplot(1,3,[1:3])
 %     wigb([sub.itr1],3,dist0,t);
     imagesc(dist0,t,[sub.itr1]);
     colormap(seismic(3));
