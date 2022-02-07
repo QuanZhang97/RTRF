@@ -24,6 +24,8 @@
 %}
 
 clear; clc; close all;
+addpath ./data
+addpath(genpath('./codes'))
 [z, rho, vp, vs, qk, qm] = ak135( 'cont' );
 zmax = 800;
 dz = 0.5;
