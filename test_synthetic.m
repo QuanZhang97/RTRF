@@ -399,3 +399,33 @@ sekv_noise = sekv+random_noise_2;
 % figure;
 % plot(ittax,itr(:,100)/max(itr(:,100)),ittax,itr_noise(:,100)/max(itr_noise(:,100)),ittax,itr_de(:,100)/max(itr_de(:,100)));
 % legend({'Raw','Noise','Radon'})
+
+
+vel=Vs2;
+indt=71:121;
+tt=ittax(indt);
+data=itr_de(indt,:);
+figure;imagesc(rx,tt,data);
+figure;imagesc(x,z,Vs2/1000);
+
+vs1d=Vp2-Vs2;
+figure;imagesc(x,z,vs1d);
+
+% nz=150;nx=300;nt=51;dx=0.5;dz=0.5;dt=0.1;
+% dx=0.005;dz=0.005;
+% vel=vs1d(:,1)*ones(1,nx);
+% vel=Vs2(:,1)*ones(1,nx)/1000.0;
+% dat0=data(:,1)*ones(1,nx);
+% dat=interp1([0:50]*0.1,data(:,1),[0:500]*0.01,'linear')'*ones(1,nx);
+% dat=zeros(size(dat));dat(:,100)=interp1([0:50]*0.1,data(:,1),[0:500]*0.01,'linear')';
+% % dat=interp1([0:50]*0.1,data(:,1),[0:5000]*0.001,'linear')'*ones(1,nx);
+% zz=[0:nz-1]*dz;xx=[0:nx-1]*dx;tt=[0:nt-1]*dt;
+% % figure;imagesc(xx,zz,vel);colormap(jet);colorbar;
+% % figure;imagesc(xx,tt,dat0);
+% % figure;imagesc(xx,tt,dat);
+% dt=0.01;nt=size(dat,1);
+% [image]=rtm_post(vel, dat, nz,nx,nt,dz,dx,dt, 0);
+% figure;imagesc(xx,zz,image);colorbar;
+% 
+
+

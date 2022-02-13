@@ -33,7 +33,7 @@ tic;
 %% Step 1: Load data
 datadir = './';
 gauss=2.5;
-load(fullfile(datadir,['event_1.mat']));
+% load(fullfile(datadir,['event_1.mat']));
 load(fullfile(datadir,['event_6~16.mat']));
 log=lognew;
 sta=unique({log.sta});
