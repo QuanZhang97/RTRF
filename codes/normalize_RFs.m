@@ -1,3 +1,4 @@
+% FEB 13 2022, Originally written by Yunfeng Chen, modified by Quan Zhang
 % Jan. 31, 2017, Yunfeng Chen, normalize the receiver function to unit
 % amplitude
 function seisout = normalize_RFs(seis)
