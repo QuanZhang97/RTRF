@@ -1,17 +1,5 @@
 % Calculate the average crustal velocity model using crust 1.0 model
-% Nov 23, 2016, Yunfeng Chen, Global Seismology Group, University of
-% Alberta.
-% Use crust 1.0 model for HK calculation, note that the ray tracing code
-% uses the top boundary layer conversion, means the velocity for each layer
-% is define at top boundary. This is the same as crust 1.0 model
-% read in crustal model
-% Nov. 25, 2016, Bug fixed regarding syntehtics, the problem is the input
-% format of the model, the format requirement is very stringent!
-% Dec. 14, 2016, return the number of sedimentary layers, which is
-% required by the HK program
-% Dec. 19, 2016, using vp and vs if zero is not always good criterion to 
-% count the number of sediments, I should also consider the layer thickness
-% Jan. 25, 2017, add flag to control if include surface topography
+% FEB 13 2022, Originally written by Yunfeng Chen, modified by Quan Zhang
 function varargout = obtain_crust1_v2(varargin)
 lat = varargin{1};
 lon = varargin{2};
