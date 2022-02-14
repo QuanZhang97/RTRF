@@ -1,4 +1,4 @@
-% Jan. 23, 2017, Yunfeng Chen, migrate the RF to depth
+% FEB 13 2022, Originally written by Yunfeng Chen, modified by Quan Zhang
 % modified after mapPsSeis2depth_1d.m and ccp_migration.m
 function [timeout, seisout, depth0] = migrate_RFs( time, seis, p, dz, zmax, z, vp, vs, TimeCorrections)
 EPS = 1e-6;
