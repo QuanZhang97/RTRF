@@ -1,3 +1,4 @@
+% FEB 13 2022, Originally written by Yunfeng Chen, modified by Quan Zhang
 % Jan. 24, 2017, Yunfeng Chen, remigrate the RFs based on some regional
 % earth model (e.g., CRUST 1.0), modified after ccp_correction code,
 % the code also calculate the amount of corrections (travel time difference)
