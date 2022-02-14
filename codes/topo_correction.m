@@ -1,3 +1,4 @@
+% FEB 13 2022, Originally written by Yunfeng Chen, modified by Quan Zhang
 % Jan. 24, 2017, Yunfeng Chen, calculate the amount of topography
 % correction assuming vertical incident ray path
 % Feb. 2nd, 2017, consider non-vertical incidence for a reference RF 
