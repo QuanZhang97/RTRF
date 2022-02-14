@@ -1,14 +1,5 @@
 % calculate the PmS conversion point of RF for a given velocity model
-% Dec. 18, 2016, Yunfeng Chen, Global Seismology Group, University of
-% Alberta. Modified after processRFmaster
-% also calcuate the location of conversion points, which requires the Vs
-% profile
-% Jan. 22, 2017, Yunfeng Chen, consider the spherical earth for seismic ray
-% traveling at deeper depth
-% May 13, 2018, Y.C., CSRIO, add comments to the code, note the ray path is
-% computed using 1D reference model this is because the ray-parameter was
-% estimated using this model.  Rewrite the code to compute RayMatrix and
-% Midpoints matrix more efficiently.
+% FEB 13 2022, Originally written by Yunfeng Chen, modified by Quan Zhang
 % Input: 
 % p: ray parameter in s/km
 % backaz: back-azimuth
